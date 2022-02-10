@@ -1,5 +1,5 @@
-import {FormInstance, WatchProperties} from '@lz/e-form-render';
-import {Breakpoint, Toolbar} from '@mui/material';
+import { FormInstance, WatchProperties } from '@ddx2x/e-form-render';
+import { Breakpoint } from '@mui/material';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Dialog from '@mui/material/Dialog';
@@ -7,7 +7,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import Drawer from '@mui/material/Drawer';
-import {computed} from 'mobx';
+import { computed } from 'mobx';
 import React from 'react';
 import Notifications from '../notification';
 import { delay, FR } from './fr';

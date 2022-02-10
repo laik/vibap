@@ -2,7 +2,7 @@ import FormRender, {
   FormInstance,
   useForm,
   WatchProperties
-} from '@lz/e-form-render';
+} from '@ddx2x/e-form-render';
 import _ from 'lodash';
 import { useEffect } from 'react';
 

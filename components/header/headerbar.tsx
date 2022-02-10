@@ -1,20 +1,16 @@
-import CloseIcon from '@mui/icons-material/Close';
+import AutoAwesomeMosaicOutlinedIcon from '@mui/icons-material/AutoAwesomeMosaicOutlined';
+import FaceRetouchingNaturalTwoToneIcon from '@mui/icons-material/FaceRetouchingNaturalTwoTone';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 // import MenuIcon from '@mui/icons-material/Menu';
 // import AppBar from '@mui/material/AppBar';
 // import Button from '@mui/material/Button';
 // import IconButton from '@mui/material/IconButton';
-import {styled} from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 // import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import FaceRetouchingNaturalTwoToneIcon from '@mui/icons-material/FaceRetouchingNaturalTwoTone';
-import AutoAwesomeMosaicOutlinedIcon from '@mui/icons-material/AutoAwesomeMosaicOutlined';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import {observable} from 'mobx';
-import {observer} from 'mobx-react';
+import { observer } from 'mobx-react';
 import Link from 'next/link';
 import React from 'react';
-// import {FirstLevelMenu} from '../menu';
-import ThemeMenu, {PaletteMode} from './theme';
 import UserMenu from './user';
 import WorkSpaces from './workspace';
 
@@ -117,7 +113,7 @@ export default class HeaderBar extends React.Component<{
             </div>
             <Logo>
               <LogoIcon sx={{color: '#295dfa'}} />
-              <Title variant='h5'>荔枝混合云</Title>
+              <Title variant='h5'>云平台</Title>
             </Logo>
           </ToolbarLeft>
           {/* {this.title()} */}
@@ -137,7 +133,7 @@ export const Logo: React.FC = () => {
     <Link href='/' passHref>
       <LogoMain>
         <FaceRetouchingNaturalTwoToneIcon sx={{color: '#295dfa'}} />
-        <Title variant='h5'>荔枝混合云</Title>
+        <Title variant='h5'>云平台</Title>
       </LogoMain>
     </Link>
   );
