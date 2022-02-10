@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { systemApi } from '../system.api';
 
 export class InstanceType extends CloudObject {
   static kind = 'Instancetype';
@@ -23,7 +23,7 @@ export class InstanceType extends CloudObject {
 export const instanceTypeApi = new ObjectApi({
   kind: InstanceType.kind,
   isNamespaced: true,
-  apiBase: '/apis/system.laik.fm/v1/instancetype',
+  apiBase: '/apis/system.ddx2x.nip/v1/instancetype',
   objectConstructor: InstanceType,
   request: systemApi,
 });

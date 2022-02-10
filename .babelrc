@@ -1,0 +1,8 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    // 装饰器语法解析
+    ["@babel/plugin-proposal-decorators", {"legacy": true}],
+    ["@babel/plugin-proposal-class-properties", {"loose": false}]
+  ]
+}

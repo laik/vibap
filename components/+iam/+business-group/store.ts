@@ -1,6 +1,6 @@
-import {CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {iamApi} from '../iam.api';
+import { CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { iamApi } from '../iam.api';
 
 export class BusinessGroup extends CloudObject {
   static kind = 'BusinessGroup';
@@ -19,7 +19,7 @@ export class BusinessGroup extends CloudObject {
 export const businessGroupApi = new ObjectApi({
   kind: BusinessGroup.kind,
   isNamespaced: false,
-  apiBase: '/apis/iam.laik.fm/v1/businessgroup',
+  apiBase: '/apis/iam.ddx2x.nip/v1/businessgroup',
   objectConstructor: BusinessGroup,
   request: iamApi,
 });

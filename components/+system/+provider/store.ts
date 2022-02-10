@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { systemApi } from '../system.api';
 
 export class Provider extends CloudObject {
   static kind = 'Provider';
@@ -22,7 +22,7 @@ export class Provider extends CloudObject {
 export const providerApi = new ObjectApi({
   kind: Provider.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/provider',
+  apiBase: '/apis/system.ddx2x.nip/v1/provider',
   objectConstructor: Provider,
   request: systemApi,
 });

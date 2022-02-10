@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { systemApi } from '../system.api';
 
 export class Region extends CloudObject {
   static kind = 'Region';
@@ -20,7 +20,7 @@ export class Region extends CloudObject {
 export const regionApi = new ObjectApi({
   kind: Region.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/region',
+  apiBase: '/apis/system.ddx2x.nip/v1/region',
   objectConstructor: Region,
   request: systemApi,
 });

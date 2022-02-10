@@ -1,5 +1,5 @@
-import {customApi} from '../../+custom/api';
-import {apiManager, CloudObject, ObjectApi, ObjectStore} from '../../../client';
+import { customApi } from '../../+custom/api';
+import { apiManager, CloudObject, ObjectApi, ObjectStore } from '../../../client';
 
 export class CustomResource extends CloudObject {
   static kind = 'CustomResource';
@@ -18,7 +18,7 @@ export class CustomResource extends CloudObject {
 export const customResourceApi = new ObjectApi({
   kind: CustomResource.kind,
   isNamespaced: false,
-  apiBase: '/apis/cr.laik.fm/v1/customresource',
+  apiBase: '/apis/cr.ddx2x.nip/v1/customresource',
   objectConstructor: CustomResource,
   request: customApi,
 });

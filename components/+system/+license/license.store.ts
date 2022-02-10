@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { systemApi } from '../system.api';
 
 export class License extends CloudObject {
   static kind = 'License';
@@ -23,7 +23,7 @@ export class License extends CloudObject {
 export const licenseApi = new ObjectApi({
   kind: License.kind,
   isNamespaced: true,
-  apiBase: '/apis/system.laik.fm/v1/license',
+  apiBase: '/apis/system.ddx2x.nip/v1/license',
   objectConstructor: License,
   request: systemApi,
 });

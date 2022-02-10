@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {eventApi} from '../api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { eventApi } from '../api';
 
 export class CloudEvent extends CloudObject {
   static kind = 'cloudevent';
@@ -24,7 +24,7 @@ export class CloudEvent extends CloudObject {
 export const cloudEventApi = new ObjectApi({
   kind: CloudEvent.kind,
   isNamespaced: true,
-  apiBase: '/apis/event.laik.fm/v1/cloudevent',
+  apiBase: '/apis/event.ddx2x.nip/v1/cloudevent',
   objectConstructor: CloudEvent,
   request: eventApi,
 });

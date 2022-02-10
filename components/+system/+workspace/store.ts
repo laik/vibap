@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { systemApi } from '../system.api';
 
 export class Workspace extends CloudObject {
   static kind = 'Workspace';
@@ -20,7 +20,7 @@ export class Workspace extends CloudObject {
 export const workspaceApi = new ObjectApi({
   kind: Workspace.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/workspace',
+  apiBase: '/apis/system.ddx2x.nip/v1/workspace',
   objectConstructor: Workspace,
   request: systemApi,
 });

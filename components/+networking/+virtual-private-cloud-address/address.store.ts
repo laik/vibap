@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {networkingApi} from '../networking.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { networkingApi } from '../networking.api';
 
 export class Address extends CloudObject {
   static kind = 'Address';
@@ -24,7 +24,7 @@ export class Address extends CloudObject {
 export const addressApi = new ObjectApi({
   kind: Address.kind,
   isNamespaced: true,
-  apiBase: '/apis/networking.laik.fm/v1/address',
+  apiBase: '/apis/networking.ddx2x.nip/v1/address',
   objectConstructor: Address,
   request: networkingApi,
 });

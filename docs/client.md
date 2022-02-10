@@ -91,7 +91,7 @@ export class ResourceType extends CloudObject {
 export const resourceTypeApi = new ObjectApi({
   kind: ResourceType.kind,
   isNamespaced: true,
-  apiBase: '/apis/resourceGroup.laik.fm/v1/resourceType',
+  apiBase: '/apis/resourceGroup.ddx2x.nip/v1/resourceType',
   objectConstructor: ResourceType,
   request: resourceGroupApi,
 });

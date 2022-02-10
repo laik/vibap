@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {networkingApi} from '../networking.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { networkingApi } from '../networking.api';
 
 export class Vpc extends CloudObject {
   static kind = 'VPC';
@@ -24,7 +24,7 @@ export class Vpc extends CloudObject {
 export const vpcApi = new ObjectApi({
   kind: Vpc.kind,
   isNamespaced: true,
-  apiBase: '/apis/networking.laik.fm/v1/vpc',
+  apiBase: '/apis/networking.ddx2x.nip/v1/vpc',
   objectConstructor: Vpc,
   request: networkingApi,
 });

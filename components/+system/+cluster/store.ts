@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { systemApi } from '../system.api';
 
 export class Cluster extends CloudObject {
   static kind = 'Cluster';
@@ -22,7 +22,7 @@ export class Cluster extends CloudObject {
 export const clusterApi = new ObjectApi({
   kind: Cluster.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/cluster',
+  apiBase: '/apis/system.ddx2x.nip/v1/cluster',
   objectConstructor: Cluster,
   request: systemApi,
 });

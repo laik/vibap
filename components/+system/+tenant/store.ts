@@ -1,6 +1,6 @@
-import {CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { systemApi } from '../system.api';
 
 export const tenantThridTools = {
   feishu: '飞书',
@@ -77,7 +77,7 @@ export class Tenant extends CloudObject {
 export const tenantApi = new ObjectApi({
   kind: Tenant.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/tenant',
+  apiBase: '/apis/system.ddx2x.nip/v1/tenant',
   objectConstructor: Tenant,
   request: systemApi,
 });

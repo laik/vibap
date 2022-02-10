@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {networkingApi} from '../networking.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { networkingApi } from '../networking.api';
 
 export class VSwitch extends CloudObject {
   static kind = 'VSwitch';
@@ -27,7 +27,7 @@ export class VSwitch extends CloudObject {
 export const vSwitchApi = new ObjectApi({
   kind: VSwitch.kind,
   isNamespaced: true,
-  apiBase: '/apis/networking.laik.fm/v1/vswitch',
+  apiBase: '/apis/networking.ddx2x.nip/v1/vswitch',
   objectConstructor: VSwitch,
   request: networkingApi,
 });

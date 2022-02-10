@@ -1,6 +1,6 @@
-import {CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {iamApi} from '../iam.api';
+import { CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { iamApi } from '../iam.api';
 
 export interface IrolePermission {
   product?: string;
@@ -61,7 +61,7 @@ export class Role extends CloudObject {
 export const roleApi = new ObjectApi({
   kind: Role.kind,
   isNamespaced: false,
-  apiBase: '/apis/iam.laik.fm/v1/role',
+  apiBase: '/apis/iam.ddx2x.nip/v1/role',
   objectConstructor: Role,
   request: iamApi,
 });

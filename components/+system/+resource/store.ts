@@ -1,6 +1,6 @@
-import {CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { systemApi } from '../system.api';
 
 export const ResourceTypeMap = {
   1: '私有资源',
@@ -36,7 +36,7 @@ export class Resource extends CloudObject {
 export const resourceApi = new ObjectApi({
   kind: Resource.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/resource',
+  apiBase: '/apis/system.ddx2x.nip/v1/resource',
   objectConstructor: Resource,
   request: systemApi,
 });

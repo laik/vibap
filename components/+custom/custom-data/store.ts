@@ -1,5 +1,5 @@
-import {apiManager, CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {customApi} from '../api';
+import { apiManager, CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { customApi } from '../api';
 import Details from './details';
 
 export class CustomData extends CloudObject {
@@ -31,7 +31,7 @@ export class CustomDataManager<T extends CloudObject = any> {
     const api = new ObjectApi({
       kind: name,
       isNamespaced: isNamespaced,
-      apiBase: '/apis/cr.laik.fm/v1/' + name,
+      apiBase: '/apis/cr.ddx2x.nip/v1/' + name,
       objectConstructor: CustomData,
       request: customApi,
     });

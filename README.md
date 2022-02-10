@@ -65,7 +65,7 @@ ui 编辑器、表格、表单
 
 3. [阿里`x-render`动态表单](https://x-render.gitee.io/) -- 动态表单文档
 
-4. [自定义组件-代码](https://gitlab.laik.fm/lizi-hybrid-cloud/material-ui-form-render)
+4. [自定义组件-代码](https://gitlab.ddx2x.nip/lizi-hybrid-cloud/material-ui-form-render)
 
 ---
 展示

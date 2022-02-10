@@ -9,7 +9,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 const withTM = require('next-transpile-modules')([
-  '@pskishere/e-form-render',
+  '@ddx2x/e-form-render',
   '@inovua/reactdatagrid-community',
   'xterm',
 ]);

@@ -1,6 +1,6 @@
-import {CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { systemApi } from '../system.api';
 
 export class Operation extends CloudObject {
   static kind = 'Operation';
@@ -19,7 +19,7 @@ export class Operation extends CloudObject {
 export const operationApi = new ObjectApi({
   kind: Operation.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/operation',
+  apiBase: '/apis/system.ddx2x.nip/v1/operation',
   objectConstructor: Operation,
   request: systemApi,
 });

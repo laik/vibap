@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {iamApi} from '../iam.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { iamApi } from '../iam.api';
 
 export const accountTypeMap = {
   3: '管理员',
@@ -53,7 +53,7 @@ export class Account extends CloudObject {
 export const accountApi = new ObjectApi({
   kind: Account.kind,
   isNamespaced: false,
-  apiBase: '/apis/iam.laik.fm/v1/account',
+  apiBase: '/apis/iam.ddx2x.nip/v1/account',
   objectConstructor: Account,
   request: iamApi,
 });

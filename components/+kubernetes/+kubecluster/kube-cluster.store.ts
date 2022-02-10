@@ -1,7 +1,7 @@
-import {CloudObject, ObjectApi} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {ObjectStore} from '../../../client/object.store';
-import {kubernetesApi} from '../kubernetes.api';
+import { CloudObject, ObjectApi } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { ObjectStore } from '../../../client/object.store';
+import { kubernetesApi } from '../kubernetes.api';
 
 export class KubeCluster extends CloudObject {
   static kind = 'KubeCluster';
@@ -19,7 +19,7 @@ export class KubeCluster extends CloudObject {
 export const kubeClusterApi = new ObjectApi({
   kind: KubeCluster.kind,
   isNamespaced: false,
-  apiBase: '/apis/kubernetes.laik.fm/v1/cluster',
+  apiBase: '/apis/kubernetes.ddx2x.nip/v1/cluster',
   objectConstructor: KubeCluster,
   request: kubernetesApi,
 });

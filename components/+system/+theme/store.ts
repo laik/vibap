@@ -1,6 +1,6 @@
-import {CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {systemApi} from '../system.api';
+import { CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { systemApi } from '../system.api';
 
 export class Theme extends CloudObject {
   static kind = 'Theme';
@@ -24,7 +24,7 @@ export class Theme extends CloudObject {
 export const themeApi = new ObjectApi({
   kind: Theme.kind,
   isNamespaced: false,
-  apiBase: '/apis/system.laik.fm/v1/theme',
+  apiBase: '/apis/system.ddx2x.nip/v1/theme',
   objectConstructor: Theme,
   request: systemApi,
 });

@@ -1,6 +1,6 @@
-import {CloudObject, ObjectApi, ObjectStore} from '../../../client';
-import {apiManager} from '../../../client/api-manager';
-import {iamApi} from '../iam.api';
+import { CloudObject, ObjectApi, ObjectStore } from '../../../client';
+import { apiManager } from '../../../client/api-manager';
+import { iamApi } from '../iam.api';
 
 export class User extends CloudObject {
   static kind = 'User';
@@ -23,7 +23,7 @@ export class User extends CloudObject {
 export const userApi = new ObjectApi({
   kind: User.kind,
   isNamespaced: false,
-  apiBase: '/apis/iam.laik.fm/v1/user',
+  apiBase: '/apis/iam.ddx2x.nip/v1/user',
   objectConstructor: User,
   request: iamApi,
 });
